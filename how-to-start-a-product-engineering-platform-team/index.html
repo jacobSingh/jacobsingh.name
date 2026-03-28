@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>How to start a product engineering platform team</title>
+    <link rel="stylesheet" href="../assets/built/screen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    
+
+<style>
+    
+#post-content .kg-image {
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+article.post #post-image {
+    max-height: 600px
+}
+   
+</style>
+</head>
+
+<body class="post-template tag-work tag-whsb tag-platforms tag-product tag-engineering tag-leadership tag-coaching tag-hash-import-2026-03-27-19-06">
+    <div class="site">
+        <header class="site-header container">
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="burger hidden-lg hidden-xl"></div>
+            <a class="logo" href="../">
+        <span class="logo-text">Jacob Singh</span>
+</a>            <div class="sep hidden-xs hidden-sm hidden-sm"></div>
+                <nav class="main-menu hidden-xs hidden-sm hidden-md">
+                    <ul class="nav-list u-plain-list">
+        <li class="menu-item menu-item-home"><a class="menu-item-link"
+                href="../">Home</a></li>
+        <li class="menu-item menu-item-coaching-consulting"><a class="menu-item-link"
+                href="../technology-leadership-coaching/">Coaching &amp; Consulting</a></li>
+        <li class="menu-item menu-item-ideas"><a class="menu-item-link"
+                href="../tag/ideas/">Ideas</a></li>
+        <li class="menu-item menu-item-work"><a class="menu-item-link"
+                href="../tag/work/">Work</a></li>
+        <li class="menu-item menu-item-life"><a class="menu-item-link"
+                href="../tag/personal/">Life</a></li>
+        <li class="menu-item menu-item-projects"><a class="menu-item-link"
+                href="../tag/projects/">Projects</a></li>
+        <li class="menu-item menu-item-about-and-contact"><a class="menu-item-link"
+                href="../about/">About and contact</a></li>
+</ul>
+                </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="toggle-track">
+                <div class="toggle-moon"><i class="icon icon-brightness-2"></i></div>
+                <div class="toggle-sun"><i class="icon icon-white-balance-sunny"></i></div>
+                <div class="toggle-thumb"></div>
+            </div>
+        </div>
+    </div>
+</header>        <div class="site-content">
+            
+<div class="content-area">
+    <main class="site-main">
+            <article class="post tag-work tag-whsb tag-platforms tag-product tag-engineering tag-leadership tag-coaching tag-hash-import-2026-03-27-19-06 single-post">
+                <header class="post-header big-title container medium">
+        <h1 class="post-title">How to start a product engineering platform team</h1>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2022-08-16">
+                            Aug 16, 2022
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    6 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a><a class="post-tag post-tag-whsb" href="../tag/whsb/"
+                                title="WHSB">WHSB</a><a class="post-tag post-tag-platforms" href="../tag/platforms/"
+                                title="platforms">platforms</a><a class="post-tag post-tag-product" href="../tag/product/"
+                                title="product">product</a><a class="post-tag post-tag-engineering" href="../tag/engineering/"
+                                title="engineering">engineering</a><a class="post-tag post-tag-leadership" href="../tag/leadership/"
+                                title="leadership">leadership</a><a class="post-tag post-tag-coaching" href="../tag/coaching/"
+                                title="coaching">coaching</a>
+                    </span>
+            </div>
+</header>                    <div class="post-media container large">
+        <div class="u-placeholder horizontal">
+            <a class="post-image-link" href="/">
+                <img class="post-image lazyload u-object-fit"
+                        src="../content/images/2022/08/db_js.jpg"
+                    alt="How to start a product engineering platform team">
+            </a>
+        </div>
+    </div>
+                <div class="post-content kg-canvas u-text-format">
+                    <p>(x-post from <a href="https://jacobsingh.substack.com/p/how-to-start-a-product-engineering?ref=localhost">https://jacobsingh.substack.com/p/how-to-start-a-product-engineering</a>)</p><p>As startups evolve, their org structures must evolve to match the evolving needs of the company. Cross-functional product teams give way to matrixed shared services teams w/ and eventually to internal product orgs aka “platform teams”. This article will specifically focus on best practices for building platform teams.</p><p>This post (like the rest of this blog) comes from coaching sessions I do with tech leaders. This week’s session was with <a href="https://twitter.com/dhruvbaldawa?ref=localhost" rel>Dhruv Baldawa</a> of <a href="https://paystack.com/?ref=localhost" rel>Paystack</a>. If you’ve got a product engineering leadership question you’d like to bounce around with me, I do one free one every week for this newsletter. Just<a href="https://forms.gle/wJeaoXyeM9aPdvar5?ref=localhost" rel> fill the form</a>.</p><p>Subscribe to receive new posts weeklyish on product engineering leadership. No other emails. Max 4 a month.<strong>✓</strong></p><p>Jumping in.</p><h3 id="background">Background:</h3><ul><li>Dhruv is a Principal Engineer at Paystack, the leading African payment gateway.</li><li>The tech team is 100 people (out of 250 employees).</li><li>He will soon be leading the newly formed platform group.</li></ul><h3 id="the-question">The question:</h3><ul><li>How should we best structure the org at this scale for reliability and scalability (not just product features)?</li><li>How can I create a technical strategy that aligns to the business strategy?</li><li>What are best (and worst) practices for building a platform team?</li></ul><h3 id="session-details">Session details:</h3><p>From a CTO/Tech org lens, I like to think of the startup journey in 4 broad phases:</p><ol><li><strong>The scramble:</strong> x-functional teams purely chasing Product Market Fit (PMF) with little regard to maintenance or architecture. Optimizes for speed by doing only a few things at once and throwing everyone at the problem. High degree of flexibility and generalization (few specialists).</li></ol><figure class="kg-card kg-image-card"><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F4233b354-449f-4b28-a717-2dba3dfeab01_794x530.png" class="kg-image" alt loading="lazy"></figure><ol><li><strong>Adult supervision:</strong> Strategic alignment becomes an issue, as does quality when we scale. We start hiring specialists (e.g. mobile, QA, data engineering, etc). These specialists often are a bottleneck because multiple teams use them. Teams depends a lot on each-other (poor architectural boundaries) and we add EMs, PMs, etc to manage this “resource utilization” and end up with a lot of planning meetings, often Scrum or something scrumish is instituted to ensure communication happens. [ <a href="https://www.sequoiacap.com/india/article/start-less-finish-more/?ref=localhost" rel>Longer post about exactly this over at Sequoia Cap</a> ]. People start coming to work just for free coffee.</li></ol><figure class="kg-card kg-image-card"><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F6a11c894-93f4-4747-bb68-91896d418ee6_868x1036.png" class="kg-image" alt loading="lazy"></figure><ol><li><strong>Platform teams:</strong> The bureaucracy and slowness of the “Adult Supervision” phase becomes unbearable and the product teams never maintain systems or automate anything. Platform teams are created to remove dependence on experts (e.g. a platform team integrates an ETL tool, removing a bottleneck on data engineering). In essence, these are teams which are building products for the people who build products. We can call these products “capabilities" as seen below (partial list):</li></ol><figure class="kg-card kg-image-card"><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F0a4779c3-9d0e-4f66-9d67-3dc6d7bc82d9_1278x1102.png" class="kg-image" alt loading="lazy"></figure><ol><li><strong>Independent business units:</strong> Even with automation and platform teams, the org gets too large for a single leader to manage and it starts hiving off into different business lines, separate P&amp;L responsibility, etc.</li></ol><figure class="kg-card kg-image-card"><img src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2F8fc1a00c-be29-481c-a897-56f879d5d51a_1306x830.png" class="kg-image" alt loading="lazy"></figure><p>Although this progression deserves a longer post in itself, I’m going to dig into phase 3 (platform teams).</p><h4 id="why-platform-teams">Why platform teams?</h4><p>Dhruv put the problem well, when he said:</p><blockquote>“Everyone is milking the cow, but no one is feeding it or giving it water”</blockquote><p>What he means is that the product teams are responsible for business outcomes (e.g. payments, shopping cart, administration, lending, etc).  But no one is responsible for any particular code base, least of all the generalized ones (such as an API gateway or a transaction database).  In addition, no one is responsible at all for non-functional requirements like scalability, security, reliability, etc.  The org wants to address this by forming a platform team.</p><p>He’s seen platform teams fail because they are out of touch with the teams they serve, or they are starved of influence / budget or they fail to make meaningful changes on any reasonable time frame so is curious to discover what the best practices are to avoid this.</p><p>Let’s dig into what platforms do and some best practices on how to run them.</p><h4 id="the-ideal-platform-team-is-a-product-team"><strong>The ideal platform team is a product team:</strong></h4><p>We defined earlier that platform teams are product teams which build products that help the actual product teams build things for customers. This is a gross generalization, but it’s a useful metaphor since it correlates with many things we know about why product teams go south.</p><p><strong>Distribution is more important than product:</strong> Engineers have been complaining about poor debugging capabilities. The platform team comes in and integrates a log aggregation service and a request tracing and search tool. Amazing. Only problem is, the garbage log messages sprinkled across 20 microservices make it impossible to use. Now you need all those engineers who were clamoring for this capability to go through and audit all of their log messages. Where do you think this falls in the product backlog? Fucking nowhere, - that’s right.</p><p>A good platform team considers this and only attempts products they have broad support for politically (boss says so) or are easy to build grassroots support for through incremental progress.  Always consider distribution as the primary hindrance to success, not how useful or how easy it is to build something.</p><p><strong>Connect the dots:</strong> When planning a “tech roadmap” or “engineering roadmap” as distinct from a “product roadmap”, it’s super important that you have some tangential connection to your company strategy. For instance, if your strategy is to be the “bank with the best customer service”, then investing in an automated ETL pipeline for customer data makes sense so your CRM team has up to date information. Sure, it also means the CRM team stops bugging your engineers, but you should be able to connect the dots for the CEO too and be defensible. Here’s a<a href="https://docs.google.com/document/d/11hRylXud--7-PNuxnq5VF-drsTmqW7U4Ba_Xb0s_nTU/edit?usp=sharing&ref=localhost" rel> template</a> which might help.</p><p><strong>Priority is a singular noun:</strong> Many force multipliers in engineering don’t have any benefit unless you have 100% adoption. For instance, let’s say you want to use a more modern CI system which allows you to stage hotfixes and the old one doesn’t support it. This requires every single micro-service to update its Ansible/Puppet/k8s/whatever build file. If even one service isn’t done, then all this work adds no value. Teams will often give an arbitrary “20% to engineering work” as a concession. This is a terribly broken model, because 80% of the work is happening at low efficiency, and if the 20% isn’t crossing the finish line on a project, it’s just making the project take longer because of context switching and shifting baselines.</p><p>So when a project requires 100% compliance to be effective, get a mandate from above, stop <em>everything </em>(within reason) and just get the SOB done in a week. Trust me, nothing is that hard when everyone is mobbing it.</p><p><strong>Build in the public, be a plumber coach:</strong> That being said… most projects do add value without getting 100% done. So most of the time, your job as a platform team is to be a janitor, not an architect. Staying in touch with deployments, on-calls, onboarding, migrations, etc and unblocking people is the primary work. When you’ve served them, only then will they listen to you as you try to push for new standards.</p><p>Keep weekly or bi-weekly demos / emails going out, run lunch and learns, facilitate post-mortems, and ensure engineering problems get the right visibility. This requires that you also understand the product roadmap and are willing to get your hands dirty with operational concerns too.</p><p><strong>Rotate.  </strong>It’s crucially important that you don’t let people stay in product or platform teams forever.  Folks should be shifted around either on a rotational basis or longer-term.  That <strong>does not</strong> mean having one person half in either team, but perhaps doing a quarter in the platform team once a year or moving after a year in product makes sense.  The reverse is also true.  Failure to do this will ensure <a href="https://en.wikipedia.org/wiki/Conway%27s_law?ref=localhost" rel>Conway’s law</a> trips up your best laid plans.</p><h3 id="the-takeaway-1m"><strong>The takeaway (1m):</strong></h3><figure class="kg-card kg-embed-card"><iframe src="https://www.youtube-nocookie.com/embed/wNDVVq_DLFY?rel=0&amp;autoplay=0&amp;showinfo=0&amp;enablejsapi=0" frameborder="0" loading="lazy" gesture="media" allow="autoplay; fullscreen" allowautoplay="true" allowfullscreen="true" width="728" height="409" style="--tw-translate-x:0; --tw-translate-y:0; --tw-rotate:0; --tw-skew-x:0; --tw-skew-y:0; --tw-scale-x:1; --tw-scale-y:1; --tw-pan-x: ; --tw-pan-y: ; --tw-pinch-zoom: ; --tw-scroll-snap-strictness:proximity; --tw-ordinal: ; --tw-slashed-zero: ; --tw-numeric-figure: ; --tw-numeric-spacing: ; --tw-numeric-fraction: ; --tw-ring-inset: ; --tw-ring-offset-width:0px; --tw-ring-offset-color:#fff; --tw-ring-color:rgb(59 130 246 / 0.5); --tw-ring-offset-shadow:0 0 #0000; --tw-ring-shadow:0 0 #0000; --tw-shadow:0 0 #0000; --tw-shadow-colored:0 0 #0000; --tw-blur: ; --tw-brightness: ; --tw-contrast: ; --tw-grayscale: ; --tw-hue-rotate: ; --tw-invert: ; --tw-saturate: ; --tw-sepia: ; --tw-drop-shadow: ; --tw-backdrop-blur: ; --tw-backdrop-brightness: ; --tw-backdrop-contrast: ; --tw-backdrop-grayscale: ; --tw-backdrop-hue-rotate: ; --tw-backdrop-invert: ; --tw-backdrop-opacity: ; --tw-backdrop-saturate: ; --tw-backdrop-sepia: ; position: absolute; display: block; top: 0px; left: 0px; margin: 0px; padding: 0px; height: 409.5px; width: 728px; background-color: rgb(247, 247, 247);"></iframe></figure><h2 id="wrapping-up-and-other-ideas">Wrapping up and other ideas:</h2><p>I hope this post has helped you think about how to structure your engineering platform teams. It’s a super interesting topic and I could have written another 2k words here. Specifically, I’d love to explore:</p><ul><li>Different execution models of platform projects</li><li>Service design and domain boundaries in software architecture</li><li>Framework and product release cycles and dependencies</li><li>Education and inclusion of non-technical staff in platform team priorities.</li><li>Design, product, analytics and other specialist platform teams.</li></ul><p>If there’s anything you’d like to share on the above or additional questions you want to dig into, please leave a comment <a href="http://twitter.com/jacobsingh?ref=localhost" rel>on twitter</a> and/or fill out my<a href="https://forms.gle/wJeaoXyeM9aPdvar5?ref=localhost" rel> weekly free coaching session form</a>.</p>
+                </div>
+                <div class="container medium">
+                    <div class="share u-hover-wrapper">
+    <a class="share-item share-facebook u-hover-item"
+        href="https://www.facebook.com/sharer.php?u=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/" target="_blank" rel="noopener"><i
+            class="icon icon-facebook"></i></a>
+    <a class="share-item share-twitter u-hover-item"
+        href="https://twitter.com/intent/tweet?url=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/&text=How%20to%20start%20a%20product%20engineering%20platform%20team" target="_blank" rel="noopener"><i
+            class="icon icon-twitter"></i></a>
+    <a class="share-item share-pinterest u-hover-item"
+        href="https://pinterest.com/pin/create/button/?url=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/&media=&description=How%20to%20start%20a%20product%20engineering%20platform%20team"
+        target="_blank" rel="noopener" data-pin-do="none"><i class="icon icon-pinterest"></i></a>
+    <a class="share-item share-linkedin u-hover-item"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/&title=How%20to%20start%20a%20product%20engineering%20platform%20team"
+        target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+    <a class="share-item share-reddit u-hover-item"
+        href="https://reddit.com/submit?url=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/&title=How%20to%20start%20a%20product%20engineering%20platform%20team" target="_blank" rel="noopener"><i
+            class="icon icon-reddit"></i></a>
+    <a class="share-item share-tumblr u-hover-item"
+        href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/&title=How%20to%20start%20a%20product%20engineering%20platform%20team"
+        target="_blank" rel="noopener"><i class="icon icon-tumblr"></i></a>
+    <a class="share-item share-vk u-hover-item"
+        href="http://vk.com/share.php?url=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/&title=How%20to%20start%20a%20product%20engineering%20platform%20team" target="_blank" rel="noopener"><i
+            class="icon icon-vk"></i></a>
+    <a class="share-item share-pocket u-hover-item" href="https://getpocket.com/edit?url=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/"
+        target="_blank" rel="noopener"><i class="icon icon-pocket"></i></a>
+    <a class="share-item share-telegram u-hover-item"
+        href="https://t.me/share/url?url=https://jacobsingh.name/how-to-start-a-product-engineering-platform-team/&text=How%20to%20start%20a%20product%20engineering%20platform%20team" target="_blank" rel="noopener"><i
+            class="icon icon-telegram"></i></a>
+</div>                        <section class="author">
+        <div class="author-image-placeholder u-placeholder">
+            <img class="author-image lazyload u-object-fit"
+                data-srcset=""
+                src="/"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Jacob Singh">
+        </div>
+        <div class="author-wrapper">
+            <header class="author-header">
+                <div class="author-header-wrapper">
+                    <h4 class="author-name">Jacob Singh</h4>
+                    <div class="author-social">
+                        <a class="author-social-item author-more"
+                            href="../author/jacob/">More posts</a>
+                    </div>
+                </div>
+            </header>
+            <div class="author-bio"></div>
+        </div>
+    </section>
+                </div>
+            </article>
+            <div class="navigation container medium">
+        <div class="navigation-item navigation-previous">
+            <a class="navigation-item-link button-arrow button-arrow-left" href="../why-we-fight/">
+                <i class="button-arrow-icon icon icon-arrow-left"></i> Previous Post
+            </a>
+        </div>
+
+        <div class="navigation-item navigation-next">
+            <a class="navigation-item-link button-arrow button-arrow-right" href="../on-almost-dying-and-realizing-youre-alive/">
+                Next Post <i class="button-arrow-icon icon icon-arrow-right"></i>
+            </a>
+        </div>
+</div>                    <section class="related-posts container medium">
+            <h3 class="related-title"><span class="text">You might also like...</span></h3>
+            <div class="row">
+                    <div class="col-md-4 related-column">
+                        <article class="post tag-agile tag-coaching tag-slack tag-ideas tag-work tag-hash-import-2026-03-27-19-06 featured">
+                                <div class="post-media">
+        <div class="u-placeholder rectangle">
+            <a class="post-image-link" href="../the-case-for-slacking-off-at-work/">
+                <img class="post-image lazyload u-object-fit"
+                        src="https://images.unsplash.com/photo-1599640112391-06cf6a9d7c2a?crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;fit&#x3D;max&amp;fm&#x3D;jpg&amp;ixid&#x3D;MnwxMTc3M3wwfDF8c2VhcmNofDUxfHxsYXp5fGVufDB8fHx8MTYzMjkzNTkwNA&amp;ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;w&#x3D;2000"
+                    alt="The case for slacking off at work">
+            </a>
+        </div>
+    </div>
+                            <header class="post-header">
+        <h2 class="post-title">
+            <a class="post-title-link" href="../the-case-for-slacking-off-at-work/">The case for slacking off at work</a>
+        </h2>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2021-09-29">
+                            Sep 29, 2021
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    7 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-agile" href="../tag/agile/"
+                                title="agile">agile</a><a class="post-tag post-tag-coaching" href="../tag/coaching/"
+                                title="coaching">coaching</a><a class="post-tag post-tag-slack" href="../tag/slack/"
+                                title="slack">slack</a><a class="post-tag post-tag-ideas" href="../tag/ideas/"
+                                title="ideas">ideas</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a>
+                    </span>
+            </div>
+</header>                        </article>
+                    </div>
+                    <div class="col-md-4 related-column">
+                        <article class="post tag-strategy tag-ideas tag-work tag-hash-import-2026-03-27-19-06 featured">
+                                <div class="post-media">
+        <div class="u-placeholder rectangle">
+            <a class="post-image-link" href="../strategic-planning-directions-vs-goals/">
+                <img class="post-image lazyload u-object-fit"
+                        src="https://images.unsplash.com/photo-1568189413794-e8be6e71bbf9?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ"
+                    alt="Strategic planning: Directions vs. Goals">
+            </a>
+        </div>
+    </div>
+                            <header class="post-header">
+        <h2 class="post-title">
+            <a class="post-title-link" href="../strategic-planning-directions-vs-goals/">Strategic planning: Directions vs. Goals</a>
+        </h2>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2020-11-27">
+                            Nov 27, 2020
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    2 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-strategy" href="../tag/strategy/"
+                                title="strategy">strategy</a><a class="post-tag post-tag-ideas" href="../tag/ideas/"
+                                title="ideas">ideas</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a>
+                    </span>
+            </div>
+</header>                        </article>
+                    </div>
+                    <div class="col-md-4 related-column">
+                        <article class="post tag-ideas tag-work tag-hash-import-2026-03-27-19-06">
+                                <div class="post-media">
+        <div class="u-placeholder rectangle">
+            <a class="post-image-link" href="../minimal-possible-change/">
+                <img class="post-image lazyload u-object-fit"
+                        src="https://images.unsplash.com/photo-1590990771866-c172665b47ce?ixlib&#x3D;rb-1.2.1&amp;q&#x3D;80&amp;fm&#x3D;jpg&amp;crop&#x3D;entropy&amp;cs&#x3D;tinysrgb&amp;w&#x3D;2000&amp;fit&#x3D;max&amp;ixid&#x3D;eyJhcHBfaWQiOjExNzczfQ"
+                    alt="Minimal possible change">
+            </a>
+        </div>
+    </div>
+                            <header class="post-header">
+        <h2 class="post-title">
+            <a class="post-title-link" href="../minimal-possible-change/">Minimal possible change</a>
+        </h2>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2020-09-15">
+                            Sep 15, 2020
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    1 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-ideas" href="../tag/ideas/"
+                                title="ideas">ideas</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a>
+                    </span>
+            </div>
+</header>                        </article>
+                    </div>
+            </div>
+        </section>
+                </main>
+</div>
+        </div>
+        <footer class="site-footer container large">
+    <div class="copyright">
+        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+    </div>
+
+    <a class="logo" href="../">
+        <span class="logo-text">Jacob Singh</span>
+</a>
+    <div class="footer-social">
+            <a class="footer-social-item footer-social-item-facebook" href="https://www.facebook.com/jacob.singh"
+                target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="icon icon-facebook"></i>
+            </a>
+            <a class="footer-social-item footer-social-item-twitter" href="https://x.com/jacobsingh"
+                target="_blank" rel="noopener" aria-label="Twitter">
+                <i class="icon icon-twitter"></i>
+            </a>
+        <a class="footer-social-item footer-social-item-rss"
+            href="https://feedly.com/i/subscription/feed/https://jacobsingh.name/rss/" target="_blank" rel="noopener"
+            aria-label="RSS">
+            <i class="icon icon-rss"></i>
+        </a>
+    </div>
+</footer>    </div>
+
+    <div class="dimmer"></div>
+
+    <div class="off-canvas">
+        <div class="canvas-close">
+            <i class="canvas-icon icon icon-window-close"></i>
+        </div>
+        <div class="mobile-menu"></div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/main.min.js"></script>
+
+    
+
+    
+</body>
+
+</html>

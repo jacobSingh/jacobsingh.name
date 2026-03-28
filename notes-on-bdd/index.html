@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes on BDD</title>
+    <link rel="stylesheet" href="../assets/built/screen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    
+
+<style>
+    
+#post-content .kg-image {
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+article.post #post-image {
+    max-height: 600px
+}
+   
+</style>
+</head>
+
+<body class="post-template tag-bdd tag-book tag-testing tag-architecture tag-ideas tag-work tag-hash-import-2026-03-27-19-06">
+    <div class="site">
+        <header class="site-header container">
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="burger hidden-lg hidden-xl"></div>
+            <a class="logo" href="../">
+        <span class="logo-text">Jacob Singh</span>
+</a>            <div class="sep hidden-xs hidden-sm hidden-sm"></div>
+                <nav class="main-menu hidden-xs hidden-sm hidden-md">
+                    <ul class="nav-list u-plain-list">
+        <li class="menu-item menu-item-home"><a class="menu-item-link"
+                href="../">Home</a></li>
+        <li class="menu-item menu-item-coaching-consulting"><a class="menu-item-link"
+                href="../technology-leadership-coaching/">Coaching &amp; Consulting</a></li>
+        <li class="menu-item menu-item-ideas"><a class="menu-item-link"
+                href="../tag/ideas/">Ideas</a></li>
+        <li class="menu-item menu-item-work"><a class="menu-item-link"
+                href="../tag/work/">Work</a></li>
+        <li class="menu-item menu-item-life"><a class="menu-item-link"
+                href="../tag/personal/">Life</a></li>
+        <li class="menu-item menu-item-projects"><a class="menu-item-link"
+                href="../tag/projects/">Projects</a></li>
+        <li class="menu-item menu-item-about-and-contact"><a class="menu-item-link"
+                href="../about/">About and contact</a></li>
+</ul>
+                </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="toggle-track">
+                <div class="toggle-moon"><i class="icon icon-brightness-2"></i></div>
+                <div class="toggle-sun"><i class="icon icon-white-balance-sunny"></i></div>
+                <div class="toggle-thumb"></div>
+            </div>
+        </div>
+    </div>
+</header>        <div class="site-content">
+            
+<div class="content-area">
+    <main class="site-main">
+            <article class="post tag-bdd tag-book tag-testing tag-architecture tag-ideas tag-work tag-hash-import-2026-03-27-19-06 single-post">
+                <header class="post-header big-title container medium">
+        <h1 class="post-title">Notes on BDD</h1>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2017-11-03">
+                            Nov 3, 2017
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    5 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-bdd" href="../tag/bdd/"
+                                title="bdd">bdd</a><a class="post-tag post-tag-book" href="../tag/book/"
+                                title="book">book</a><a class="post-tag post-tag-testing" href="../tag/testing/"
+                                title="testing">testing</a><a class="post-tag post-tag-architecture" href="../tag/architecture/"
+                                title="architecture">architecture</a><a class="post-tag post-tag-ideas" href="../tag/ideas/"
+                                title="ideas">ideas</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a>
+                    </span>
+            </div>
+</header>                    <div class="post-media container large">
+        <div class="u-placeholder horizontal">
+            <a class="post-image-link" href="/">
+                <img class="post-image lazyload u-object-fit"
+                        src="../content/images/2020/05/layers.jpg"
+                    alt="Notes on BDD">
+            </a>
+        </div>
+    </div>
+                <div class="post-content kg-canvas u-text-format">
+                    <p>I’ve been researching Behavior Driven Development. This is not a blog post in that it is completely unedited, without links or pictures. Utter contempt for you, my reader. I’m just taking notes but might as well do so publicly.</p><h2 id="write-in-a-declarative-style-">Write in a declarative style.</h2><p><strong>Given</strong> should focus on things like:</p><ul><li>Who the user is</li><li>What they want to do</li><li>Any configuration a user has set</li><li>Anything they have changed on the application since it was opened</li><li>Any existing data setup (which is expressed in business language, but implemented as DB inserts/updates)</li><li>What screen they are on (if a UI test)</li></ul><p><strong>Given</strong> should not include things like:</p><ul><li>Clicking on this or that to login or change options</li><li>Other actions a user has taken to set up state</li></ul><p><strong>Examples:</strong><br> Given a user is logged in (or even better, use a persona)<br> NOT<br> Given a user goes to /user<br> And a user logs in as “foo” using password “bar”<br> And a user goes to the support page</p><p><strong>When</strong> should focus on:</p><p><strong>When</strong> should ideally not include:</p><ul><li>What they click on</li><li>Where they navigate to</li></ul><p>Note: I find this hard to make happen in real-world scenarios, many UI tests do seem to be based on UI interactions, so not sure always how to make this real.</p><p><strong>Examples:</strong><br> When the user sends a support request containing:<br> |title|message|email|<br> |You suck| In every way possible|<a href="https://jacobsingh.name/cdn-cgi/l/email-protection#d2b1bdbfa2beb3bbbcb7a092b7aab3bfa2beb7fcb1bdbf">[email protected] </a>|<br> NOT<br> When the user enters “You Suck into the title field (or even worse, into input[name=” title”])<br> And the user enters message…<br> And the user clicks on submit…</p><p>** Then** should focus on:</p><ul><li>Ensuring value was delivered or errors were caught</li><li>That event happened</li></ul><p><strong>Then</strong> should not focus on:</p><ul><li>The steps it takes to find the assertion data</li><li>Where the result is (form fields, etc)</li><li>How the application looks, etc.</li></ul><p><strong>Examples:</strong><br> Then the user is shown a confirmation message<br> NOT<br> Then the users see a modal popup containing the phrase “Thank you, we received your request”</p><h2 id="use-personas">Use personas</h2><p>Taken from BDD in Action…</p><figure class="kg-card kg-image-card"><img src="../content/images/downloaded_images/Notes-on-BDD/0-VhlwCANYS1Ei1Rdf.jpg" class="kg-image" alt loading="lazy"></figure><figure class="kg-card kg-image-card"><img src="../content/images/downloaded_images/Notes-on-BDD/0-es33210adCKeKLPj.jpg" class="kg-image" alt loading="lazy"></figure><p>So the persona is defined somewhere in the architecture of the test files (note: this is a challenge in multi-language test implementations). Then Scenarios can be written using this Persona all over. I like this…. The attributes of this persona are then unbound from the tests, but have relevance in testing certain cases.</p><p>This can also be overwritten like:<br> Given Jane is 60 years old</p><p>A step def for this, would take the persona we already are using, and change its age to test a given scenario.</p><h2 id="entities">Entities</h2><p>Okay, so this is really the same as personas, but applying to other things. So instead of:</p><pre><code>Given there is a product called "rice" with the id 123456 and the price 25.00
+
+
+</code></pre><p>OR</p><pre><code>When Jane adds the product with id "1233456"
+
+
+</code></pre><p>We define Rice as a thing we prepopulate either with our CI or via a hook in our BDD runner. Then we can just refer to it whenever.</p><h2 id="layers-of-abstraction">Layers of abstraction</h2><figure class="kg-card kg-image-card"><img src="../content/images/downloaded_images/Notes-on-BDD/0-x8N2c3Xrd0yavq0s.jpg" class="kg-image" alt loading="lazy"></figure><ol><li>Business Rules Layer: Gherkin is written only in business language. It never contains implementation details.</li><li>Business Flow Layer: The step files call high-level functions of all the things that need to happen. (I want to buy, I want to register, I want to pay, etc)</li><li>Technical API: Those high-level functions then call a facade which interacts with the application (Pay with credit card, AddProduct(xy), Click menu, etc)</li><li>Technical details: This technical facade contains the implementation details (which selectors to click on, which APIs to call, handling async, etc) * this one has things like XPATH selectors in it and HTTP handling</li></ol><p>This is important because it adds reusability and robustness to the stack. This is very easily understandable when it is fronting a traditional Page Object Model and browser automation. the POM is level 3 (Techincal API). Level 2 is still usually missing though because traditional steps are still fairly imperative and think in terms of specific manipulations to make on the application, not functional steps that need to be implemented</p><h2 id="when-to-use-web-mobile-automation-vs-other-test-types">When to use web/mobile automation vs. other test types</h2><p>This is the big one I’m reading the book for. Great quote and example here:</p><blockquote><em>Web tests do an excellent job of illustrating how a user interacts with the system via the user interface to achieve a particular business goal. But they don’t need to show every possible path through the system-just the more significant ones. More exhaustive testing can be left to faster-running unit tests.</em><em>A good rule of thumb is to ask yourself whether you’re illustrating how the user interacts with the application or underlying business logic that’s independent of the user interface. For example, suppose you were testing a user authentication feature. The acceptance criteria might include the following:</em><br><em>The user should receive feedback indicating the strength of the password entered.</em><br></blockquote><ul><li>Only strong passwords should be accepted.</li><li>The first acceptance criterion relates to the user’s interaction with the web page, and would need to illustrate how this feedback is provided on the login page. This would be a good candidate for an automated web test.</li></ul><blockquote><em>The second criterion, on the other hand, is about determining what makes a strong password, and what passwords users should be allowed to enter. While this could be done through the user interface by repeatedly submitting different passwords, this would be wasteful. What you’re really checking here is the password-strength algorithm, so an application-code-level test would be more appropriate.</em><br><em> ‘’’</em></blockquote><h2 id="what-is-worth-writing-scenarios-for-">What is worth writing scenarios for.</h2><p>Another big one. It’s important to not say “all new features must have BDD spec files”… Because the reality is that not everything is worth testing to spending time in the 3-amigos conversations about.</p><p>I thought this was a no-no given Agile focus on users, but actually, this is a rule worth breaking. As long as the business can understand the Gherkin, anything is fine. Consider this example from BDD in Action:</p><pre><code>Feature: Retrieve information about a given flight Scenario: Find flight details by flight number Given I need to know the details of flight number FH-101 When I request the details about this flight Then I should receive the following: | flightNumber | departure | destination | time | | FH-101 | MEL | SYD | 06:00 |
+
+
+</code></pre><p>This doesn’t say “A User wants… etc”… And I think it’s still readable, useful and implementable.</p><p>More later as I finish the book up….</p><hr><p><em>Originally published at </em><a href="https://jacobsingh.name/export/www.jacobsingh.name/content/notes-bdd.html"><em>http://www.jacobsingh.name</em></a><em> on November 3, 2017.</em>
+
+</p>
+                </div>
+                <div class="container medium">
+                    <div class="share u-hover-wrapper">
+    <a class="share-item share-facebook u-hover-item"
+        href="https://www.facebook.com/sharer.php?u=https://jacobsingh.name/notes-on-bdd/" target="_blank" rel="noopener"><i
+            class="icon icon-facebook"></i></a>
+    <a class="share-item share-twitter u-hover-item"
+        href="https://twitter.com/intent/tweet?url=https://jacobsingh.name/notes-on-bdd/&text=Notes%20on%20BDD" target="_blank" rel="noopener"><i
+            class="icon icon-twitter"></i></a>
+    <a class="share-item share-pinterest u-hover-item"
+        href="https://pinterest.com/pin/create/button/?url=https://jacobsingh.name/notes-on-bdd/&media=&description=Notes%20on%20BDD"
+        target="_blank" rel="noopener" data-pin-do="none"><i class="icon icon-pinterest"></i></a>
+    <a class="share-item share-linkedin u-hover-item"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://jacobsingh.name/notes-on-bdd/&title=Notes%20on%20BDD"
+        target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+    <a class="share-item share-reddit u-hover-item"
+        href="https://reddit.com/submit?url=https://jacobsingh.name/notes-on-bdd/&title=Notes%20on%20BDD" target="_blank" rel="noopener"><i
+            class="icon icon-reddit"></i></a>
+    <a class="share-item share-tumblr u-hover-item"
+        href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://jacobsingh.name/notes-on-bdd/&title=Notes%20on%20BDD"
+        target="_blank" rel="noopener"><i class="icon icon-tumblr"></i></a>
+    <a class="share-item share-vk u-hover-item"
+        href="http://vk.com/share.php?url=https://jacobsingh.name/notes-on-bdd/&title=Notes%20on%20BDD" target="_blank" rel="noopener"><i
+            class="icon icon-vk"></i></a>
+    <a class="share-item share-pocket u-hover-item" href="https://getpocket.com/edit?url=https://jacobsingh.name/notes-on-bdd/"
+        target="_blank" rel="noopener"><i class="icon icon-pocket"></i></a>
+    <a class="share-item share-telegram u-hover-item"
+        href="https://t.me/share/url?url=https://jacobsingh.name/notes-on-bdd/&text=Notes%20on%20BDD" target="_blank" rel="noopener"><i
+            class="icon icon-telegram"></i></a>
+</div>                        <section class="author">
+        <div class="author-image-placeholder u-placeholder">
+            <img class="author-image lazyload u-object-fit"
+                data-srcset=""
+                src="/"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Jacob Singh">
+        </div>
+        <div class="author-wrapper">
+            <header class="author-header">
+                <div class="author-header-wrapper">
+                    <h4 class="author-name">Jacob Singh</h4>
+                    <div class="author-social">
+                        <a class="author-social-item author-more"
+                            href="../author/jacob/">More posts</a>
+                    </div>
+                </div>
+            </header>
+            <div class="author-bio"></div>
+        </div>
+    </section>
+                </div>
+            </article>
+            <div class="navigation container medium">
+        <div class="navigation-item navigation-previous">
+            <a class="navigation-item-link button-arrow button-arrow-left" href="../the-second-half/">
+                <i class="button-arrow-icon icon icon-arrow-left"></i> Previous Post
+            </a>
+        </div>
+
+        <div class="navigation-item navigation-next">
+            <a class="navigation-item-link button-arrow button-arrow-right" href="../how-we-want-to-be/">
+                Next Post <i class="button-arrow-icon icon icon-arrow-right"></i>
+            </a>
+        </div>
+</div>                            </main>
+</div>
+        </div>
+        <footer class="site-footer container large">
+    <div class="copyright">
+        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+    </div>
+
+    <a class="logo" href="../">
+        <span class="logo-text">Jacob Singh</span>
+</a>
+    <div class="footer-social">
+            <a class="footer-social-item footer-social-item-facebook" href="https://www.facebook.com/jacob.singh"
+                target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="icon icon-facebook"></i>
+            </a>
+            <a class="footer-social-item footer-social-item-twitter" href="https://x.com/jacobsingh"
+                target="_blank" rel="noopener" aria-label="Twitter">
+                <i class="icon icon-twitter"></i>
+            </a>
+        <a class="footer-social-item footer-social-item-rss"
+            href="https://feedly.com/i/subscription/feed/https://jacobsingh.name/rss/" target="_blank" rel="noopener"
+            aria-label="RSS">
+            <i class="icon icon-rss"></i>
+        </a>
+    </div>
+</footer>    </div>
+
+    <div class="dimmer"></div>
+
+    <div class="off-canvas">
+        <div class="canvas-close">
+            <i class="canvas-icon icon icon-window-close"></i>
+        </div>
+        <div class="mobile-menu"></div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/main.min.js"></script>
+
+    
+
+    
+</body>
+
+</html>

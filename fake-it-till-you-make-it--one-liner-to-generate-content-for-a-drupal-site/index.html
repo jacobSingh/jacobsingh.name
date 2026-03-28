@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fake it till you make it, one-liner to generate content for a Drupal site</title>
+    <link rel="stylesheet" href="../assets/built/screen.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i,800">
+
+    
+
+<style>
+    
+#post-content .kg-image {
+    width: 70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+article.post #post-image {
+    max-height: 600px
+}
+   
+</style>
+</head>
+
+<body class="post-template tag-drupal tag-work tag-devel tag-tips tag-hash-import-2026-03-27-19-06">
+    <div class="site">
+        <header class="site-header container">
+    <div class="navbar">
+        <div class="navbar-left">
+            <div class="burger hidden-lg hidden-xl"></div>
+            <a class="logo" href="../">
+        <span class="logo-text">Jacob Singh</span>
+</a>            <div class="sep hidden-xs hidden-sm hidden-sm"></div>
+                <nav class="main-menu hidden-xs hidden-sm hidden-md">
+                    <ul class="nav-list u-plain-list">
+        <li class="menu-item menu-item-home"><a class="menu-item-link"
+                href="../">Home</a></li>
+        <li class="menu-item menu-item-coaching-consulting"><a class="menu-item-link"
+                href="../technology-leadership-coaching/">Coaching &amp; Consulting</a></li>
+        <li class="menu-item menu-item-ideas"><a class="menu-item-link"
+                href="../tag/ideas/">Ideas</a></li>
+        <li class="menu-item menu-item-work"><a class="menu-item-link"
+                href="../tag/work/">Work</a></li>
+        <li class="menu-item menu-item-life"><a class="menu-item-link"
+                href="../tag/personal/">Life</a></li>
+        <li class="menu-item menu-item-projects"><a class="menu-item-link"
+                href="../tag/projects/">Projects</a></li>
+        <li class="menu-item menu-item-about-and-contact"><a class="menu-item-link"
+                href="../about/">About and contact</a></li>
+</ul>
+                </nav>
+        </div>
+        <div class="navbar-right">
+            <div class="toggle-track">
+                <div class="toggle-moon"><i class="icon icon-brightness-2"></i></div>
+                <div class="toggle-sun"><i class="icon icon-white-balance-sunny"></i></div>
+                <div class="toggle-thumb"></div>
+            </div>
+        </div>
+    </div>
+</header>        <div class="site-content">
+            
+<div class="content-area">
+    <main class="site-main">
+            <article class="post tag-drupal tag-work tag-devel tag-tips tag-hash-import-2026-03-27-19-06 no-image no-image single-post">
+                <header class="post-header big-title container medium">
+        <h1 class="post-title">Fake it till you make it, one-liner to generate content for a Drupal site</h1>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2012-07-07">
+                            Jul 7, 2012
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    1 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-drupal" href="../tag/drupal/"
+                                title="drupal">drupal</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a><a class="post-tag post-tag-devel" href="../tag/devel/"
+                                title="devel">devel</a><a class="post-tag post-tag-tips" href="../tag/tips/"
+                                title="tips">tips</a>
+                    </span>
+            </div>
+</header>                                <div class="post-content kg-canvas u-text-format">
+                    <p><a href="https://drupal.org/project/devel?ref=localhost">Devel Generate</a> is great module for putting some dummy content on your site. You can generate taxonomy terms and vocabs, users, nodes and menus. Other modules, such as the voting API also plugin to it to generate votes.</p><p>Devel Generate also has great <a href="https://drupal.org/project/drush?ref=localhost">Drush</a> support. This little one liner will build a site with a few vocabularies, a couple dozen terms, some users, some content and a menu or two.</p><blockquote><em>VOCAB=$(drush genv — kill 3 2&gt;&amp;1 | tail -3 | head -n1) &amp;&amp; drush gent — kill $VOCAB 20 &amp;&amp; drush — kill genu 50 &amp;&amp; drush — kill genc 200 &amp;&amp; drush — kill genm 5</em></blockquote><p>I have an alias for it, ($alias make_me_stuff=’the command above’) so when I’m starting a new project I can just hop in to the docroot and run: make_me_stuff
+
+</p>
+                </div>
+                <div class="container medium">
+                    <div class="share u-hover-wrapper">
+    <a class="share-item share-facebook u-hover-item"
+        href="https://www.facebook.com/sharer.php?u=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/" target="_blank" rel="noopener"><i
+            class="icon icon-facebook"></i></a>
+    <a class="share-item share-twitter u-hover-item"
+        href="https://twitter.com/intent/tweet?url=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/&text=Fake%20it%20till%20you%20make%20it%2C%20one-liner%20to%20generate%20content%20for%20a%20Drupal%20site" target="_blank" rel="noopener"><i
+            class="icon icon-twitter"></i></a>
+    <a class="share-item share-pinterest u-hover-item"
+        href="https://pinterest.com/pin/create/button/?url=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/&media=&description=Fake%20it%20till%20you%20make%20it%2C%20one-liner%20to%20generate%20content%20for%20a%20Drupal%20site"
+        target="_blank" rel="noopener" data-pin-do="none"><i class="icon icon-pinterest"></i></a>
+    <a class="share-item share-linkedin u-hover-item"
+        href="https://www.linkedin.com/shareArticle?mini=true&url=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/&title=Fake%20it%20till%20you%20make%20it%2C%20one-liner%20to%20generate%20content%20for%20a%20Drupal%20site"
+        target="_blank" rel="noopener"><i class="icon icon-linkedin"></i></a>
+    <a class="share-item share-reddit u-hover-item"
+        href="https://reddit.com/submit?url=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/&title=Fake%20it%20till%20you%20make%20it%2C%20one-liner%20to%20generate%20content%20for%20a%20Drupal%20site" target="_blank" rel="noopener"><i
+            class="icon icon-reddit"></i></a>
+    <a class="share-item share-tumblr u-hover-item"
+        href="https://www.tumblr.com/widgets/share/tool?canonicalUrl=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/&title=Fake%20it%20till%20you%20make%20it%2C%20one-liner%20to%20generate%20content%20for%20a%20Drupal%20site"
+        target="_blank" rel="noopener"><i class="icon icon-tumblr"></i></a>
+    <a class="share-item share-vk u-hover-item"
+        href="http://vk.com/share.php?url=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/&title=Fake%20it%20till%20you%20make%20it%2C%20one-liner%20to%20generate%20content%20for%20a%20Drupal%20site" target="_blank" rel="noopener"><i
+            class="icon icon-vk"></i></a>
+    <a class="share-item share-pocket u-hover-item" href="https://getpocket.com/edit?url=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/"
+        target="_blank" rel="noopener"><i class="icon icon-pocket"></i></a>
+    <a class="share-item share-telegram u-hover-item"
+        href="https://t.me/share/url?url=https://jacobsingh.name/fake-it-till-you-make-it--one-liner-to-generate-content-for-a-drupal-site/&text=Fake%20it%20till%20you%20make%20it%2C%20one-liner%20to%20generate%20content%20for%20a%20Drupal%20site" target="_blank" rel="noopener"><i
+            class="icon icon-telegram"></i></a>
+</div>                        <section class="author">
+        <div class="author-image-placeholder u-placeholder">
+            <img class="author-image lazyload u-object-fit"
+                data-srcset=""
+                src="/"
+                srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="
+                alt="Jacob Singh">
+        </div>
+        <div class="author-wrapper">
+            <header class="author-header">
+                <div class="author-header-wrapper">
+                    <h4 class="author-name">Jacob Singh</h4>
+                    <div class="author-social">
+                        <a class="author-social-item author-more"
+                            href="../author/jacob/">More posts</a>
+                    </div>
+                </div>
+            </header>
+            <div class="author-bio"></div>
+        </div>
+    </section>
+                </div>
+            </article>
+            <div class="navigation container medium">
+        <div class="navigation-item navigation-previous">
+            <a class="navigation-item-link button-arrow button-arrow-left" href="../acquia-u-graduates/">
+                <i class="button-arrow-icon icon icon-arrow-left"></i> Previous Post
+            </a>
+        </div>
+
+        <div class="navigation-item navigation-next">
+            <a class="navigation-item-link button-arrow button-arrow-right" href="../tab-wrangler-or-how-i-stopped-thrashing-and-learned-to-close-my-tabs/">
+                Next Post <i class="button-arrow-icon icon icon-arrow-right"></i>
+            </a>
+        </div>
+</div>                    <section class="related-posts container medium">
+            <h3 class="related-title"><span class="text">You might also like...</span></h3>
+            <div class="row">
+                    <div class="col-md-4 related-column">
+                        <article class="post tag-drupal tag-oss tag-acquia tag-work tag-hash-import-2026-03-27-19-06">
+                                <div class="post-media">
+        <div class="u-placeholder rectangle">
+            <a class="post-image-link" href="../august-acquia-india-drupal-meetup-in-delhi/">
+                <img class="post-image lazyload u-object-fit"
+                        src="../content/images/2020/05/0-Cqnm_WZaj9dTlxiq.jpg"
+                    alt="August Acquia India Drupal meetup in Delhi">
+            </a>
+        </div>
+    </div>
+                            <header class="post-header">
+        <h2 class="post-title">
+            <a class="post-title-link" href="../august-acquia-india-drupal-meetup-in-delhi/">August Acquia India Drupal meetup in Delhi</a>
+        </h2>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2014-08-14">
+                            Aug 14, 2014
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    1 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-drupal" href="../tag/drupal/"
+                                title="drupal">drupal</a><a class="post-tag post-tag-oss" href="../tag/oss/"
+                                title="oss">oss</a><a class="post-tag post-tag-acquia" href="../tag/acquia/"
+                                title="acquia">acquia</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a>
+                    </span>
+            </div>
+</header>                        </article>
+                    </div>
+                    <div class="col-md-4 related-column">
+                        <article class="post tag-drupal tag-work tag-open-source tag-ideas tag-hash-import-2026-03-27-19-06 no-image no-image">
+                                                        <header class="post-header">
+        <h2 class="post-title">
+            <a class="post-title-link" href="../lazy-programmers/">Lazy Programmers</a>
+        </h2>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2012-05-01">
+                            May 1, 2012
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    1 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-drupal" href="../tag/drupal/"
+                                title="drupal">drupal</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a><a class="post-tag post-tag-open-source" href="../tag/open-source/"
+                                title="open source">open source</a><a class="post-tag post-tag-ideas" href="../tag/ideas/"
+                                title="ideas">ideas</a>
+                    </span>
+            </div>
+</header>                        </article>
+                    </div>
+                    <div class="col-md-4 related-column">
+                        <article class="post tag-drupal tag-work tag-presentation tag-hash-import-2026-03-27-19-06 no-image no-image">
+                                                        <header class="post-header">
+        <h2 class="post-title">
+            <a class="post-title-link" href="../a-collaborative-open-source-presentation/">A collaborative open source presentation</a>
+        </h2>
+            <div class="post-meta">
+                <span class="post-meta-item post-meta-date">
+                    <time datetime="2011-12-12">
+                            Dec 12, 2011
+                    </time>
+                </span>
+                <span class="post-meta-item post-meta-length">
+                    5 min read
+                </span>
+                    <span class="post-meta-item post-meta-tags">
+                        <a class="post-tag post-tag-drupal" href="../tag/drupal/"
+                                title="drupal">drupal</a><a class="post-tag post-tag-work" href="../tag/work/"
+                                title="work">work</a><a class="post-tag post-tag-presentation" href="../tag/presentation/"
+                                title="presentation">presentation</a>
+                    </span>
+            </div>
+</header>                        </article>
+                    </div>
+            </div>
+        </section>
+                </main>
+</div>
+        </div>
+        <footer class="site-footer container large">
+    <div class="copyright">
+        Powered by <a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a>
+    </div>
+
+    <a class="logo" href="../">
+        <span class="logo-text">Jacob Singh</span>
+</a>
+    <div class="footer-social">
+            <a class="footer-social-item footer-social-item-facebook" href="https://www.facebook.com/jacob.singh"
+                target="_blank" rel="noopener" aria-label="Facebook">
+                <i class="icon icon-facebook"></i>
+            </a>
+            <a class="footer-social-item footer-social-item-twitter" href="https://x.com/jacobsingh"
+                target="_blank" rel="noopener" aria-label="Twitter">
+                <i class="icon icon-twitter"></i>
+            </a>
+        <a class="footer-social-item footer-social-item-rss"
+            href="https://feedly.com/i/subscription/feed/https://jacobsingh.name/rss/" target="_blank" rel="noopener"
+            aria-label="RSS">
+            <i class="icon icon-rss"></i>
+        </a>
+    </div>
+</footer>    </div>
+
+    <div class="dimmer"></div>
+
+    <div class="off-canvas">
+        <div class="canvas-close">
+            <i class="canvas-icon icon icon-window-close"></i>
+        </div>
+        <div class="mobile-menu"></div>
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous">
+    </script>
+    <script src="../assets/built/main.min.js"></script>
+
+    
+
+    
+</body>
+
+</html>
